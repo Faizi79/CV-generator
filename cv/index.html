@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/b7e02f2a96.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container1">
+       <div class="cv-form flex">
+            <h2 >CV Form</h2></div>
+            <form  action="">
+                <div class="form-group">
+                    <label for="img" class="btn">Upload profile</label>
+                    <input type="file" class="btn" id="img"  required>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="mainSkill">Main Skill</label>
+                    <input type="text" id="mainSkill" name="mainskills" required>      
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email-1" name="email" required>
+                    </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone-1" name="phone" required>
+                </div>                
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">linkedin</label>
+                    <input type="text" id="linkedin" name="linkedin" required>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="Certifications">Certifications</label>
+                    <input type="text" id="ctf1" required>
+                    <input type="text" id="ctf2" required>
+                    <input type="text" id="ctf3" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="Languages">Languages</label>
+                    <input type="text" id="lg1" required>
+                    <input type="text" id="lg2" required>
+                    <label for="education">Education</label>
+                    <input type="text" id="edu1" required>
+                    <input type="text" id="edu2" required>
+                    <input type="text" id="edu3" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="skill">Skills</label>
+                    <input type="text" id="skill1" required>
+                    <input type="text" id="skill2" required>
+                    <input type="text" id="skill3" required>
+                    <input type="text" id="skill4" required>
+
+
+                </div>
+                
+                <div class="form-group">
+                    <label for="projects">Projects</label>
+                    <input type="text" id="pj1" required>
+                    <input type="text" id="pj2" required>
+                    <input type="text" id="pj3" required>
+                    <input type="text" id="pj4" required>
+                </div>
+              
+                <div class="form-group">
+                    <label for="about">About me</label>
+                    <textarea id="about" name="about" required></textarea>
+                </div>
+               
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <textarea id="experience" name="experience" required></textarea>
+                </div>
+               
+                <!-- <div class="btns">
+                <input class="btn" type="button" value="Submit" onclick="enterData()">
+                <input class="btn" type="reset">
+            </div> -->
+            <div class="btns">
+                <input class="btn" type="button" value="Submit" onclick="enterData()">
+                <input class="btn" type="button" value="Download PDF" onclick="downloadPDF()">
+                <input class="btn" type="reset">
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="header flex">
+            <div class="image flex">
+                <img id="img-p" src="https://tse1.mm.bing.net/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa&pid=Api&P=0&h=220" alt="your photo">
+            </div>
+            <div class="head-name ">
+                <h2 id="name">Your name</h2>
+                <p id="mSkill">Main Skill</p>
+            </div>
+        </div>
+        <!-- complete -->
+        <div class="summary flex">
+            <div class="details flex">
+                <div class="social-icon">
+                   <p ><i class="fa-regular fa-envelope"></i> &#160;&#160;&#160;<span id="email">Your Eamil</span></p> 
+                   <p ><i class="fa-solid fa-phone"></i> &#160;&#160;&#160;<span id="phone"> Your phone number</span></p> 
+                   <p><i class="fa-solid fa-map-location-dot"></i>&#160;&#160;&#160; <span id="add">Your address</span></p>
+                   <p><i class="fa-brands fa-linkedin"></i> &#160;&#160;&#160;<span id="lknid">your Linkedin profile</span></p>
+
+                </div>
+                <div class="edu-details">
+                    <div class="header-names">
+                        <h2>Eductaion</h2>
+                        <hr>
+                    </div>
+                    <ul>
+                        <li id="ed1">Education</li>
+                        <li id="ed2">Education</li>
+                        <li id="ed3">Education</li>
+                    </ul>
+                </div>
+                <div class="certifications">
+                    <div class="header-names">
+                        <h2>Certifications</h2>
+                        <hr>
+                    </div>
+                    <ul>
+                        <li id="cf1">certification</li>
+                        <li id="cf2">certification</li>
+                        <li id="cf3">certification</li>
+                    </ul>
+                </div>
+                <div class="certifications">
+                    <div class="header-names">
+                        <h2>Languages</h2>
+                        <hr>
+                    </div>
+                    <ul>
+                        <li id="lang1">Language</li>
+                        <li id="lang2">Language</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="about-section">
+                <div class="about">
+                        <div class="header-names">
+                            <h2>About Me</h2>
+                            <hr>
+                        </div>
+                        <p id="abt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, alias reprehenderit? Architecto sapiente, omnis animi totam nesciunt voluptatem eius aut.</p>
+                       
+                    
+                </div>
+                <div class="skills">
+                    <div class="header-names">
+                        <h2>Skills</h2>
+                        <hr>
+                    </div>
+                   <ul>
+                    <li id="skl1">Skill</li>
+                    <li id="skl2">Skill</li>
+                    <li id="skl3">Skill</li>
+                    <li id="skl4">Skill</li>
+                   </ul>
+            </div>
+            <div class="experience">
+                <div class="header-names">
+                    <h2>Experience</h2>
+                    <hr>
+                </div>
+                <p id="exp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, alias reprehenderit? Architecto sapiente, omnis animi totam nesciunt voluptatem eius aut earum cumque qui voluptatibus fugit mollitia deserunt.</p>
+               
+            
+        </div>
+        <div class="skills">
+            <div class="header-names">
+                <h2>Projects</h2>
+                <hr>
+            </div>
+           <ul>
+            <li id="p1">Project</li>
+            <li id="p2">Project</li>
+            <li id="p3">Project</li>
+            <li id="p4">Project</li>
+           </ul>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/b7e02f2a96.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
